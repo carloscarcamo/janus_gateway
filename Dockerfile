@@ -16,7 +16,8 @@ RUN apt-get update && apt-get install -y \
 	git \
 	wget \
 	unzip \
-	python
+	python \
+	libconfig-dev
 
 ###sipre plugin (dev stage)###
 #RUN wget http://creytiv.com/pub/re-0.5.3.tar.gz && tar xvf re-0.5.3.tar.gz && \
@@ -26,7 +27,7 @@ RUN apt-get update && apt-get install -y \
 #	make clean && \
 #       patch -p0 -u < re-sip-trace.patch && \
 #	make && \
-#	make install 
+#	make install
 #	nm /usr/local/lib/libre.so | grep tls_alloc
 
 ### Janus ###
